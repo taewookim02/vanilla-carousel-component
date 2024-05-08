@@ -3,3 +3,8 @@ import image2 from "./img/image2.png";
 import image3 from "./img/image3.png";
 import image4 from "./img/image4.png";
 import image5 from "./img/image5.png";
+import dotActive from "./img/dot-active.svg";
+import dotInactive from "./img/dot-inactive.svg";
+import arrowRight from "./img/arrow-right.svg";
+import arrowLeft from "./img/arrow-left.svg";
+import "./style.css";
