@@ -1,0 +1,101 @@
+@import url("./variables.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: #333;
+}
+
+/* CAROUSEL */
+.carousel {
+  width: var(--carousel-width);
+  overflow: hidden;
+  height: var(--carousel-height);
+  position: relative;
+
+  &:hover {
+    .controls {
+      opacity: 1;
+    }
+    .dots {
+      opacity: 1;
+    }
+  }
+
+  /* SLIDES */
+  .slides {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+
+    .slide {
+      min-width: 100%;
+      min-height: var(--carousel-height);
+      height: auto;
+    }
+  }
+}
+
+/* CONTROLS */
+.controls {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  justify-content: space-between;
+
+  width: 100%;
+  z-index: 90000;
+  opacity: 0.1;
+
+  transition: all ease 0.3s;
+  .control {
+    padding: 0 16px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+
+    svg {
+      path {
+        cursor: pointer;
+
+        &:active {
+          fill: black;
+        }
+      }
+    }
+  }
+}
+
+/* DOTS */
+.dots {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 16px;
+  opacity: 0.1;
+  transition: all ease 0.3s;
+  .dot {
+    svg {
+      display: block;
+
+      path {
+        cursor: pointer;
+
+        &:active {
+          fill: black;
+        }
+      }
+    }
+  }
+}
