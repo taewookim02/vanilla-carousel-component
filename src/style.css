@@ -65,9 +65,8 @@ body {
     cursor: pointer;
 
     svg {
+      cursor: pointer;
       path {
-        cursor: pointer;
-
         &:active {
           fill: black;
         }
@@ -91,11 +90,21 @@ body {
 
       path {
         cursor: pointer;
+        fill: #fff;
+        &:hover {
+          fill: #333;
+        }
 
         &:active {
-          fill: black;
+          fill: #111;
         }
       }
     }
+  }
+}
+
+.dot-active {
+  & path {
+    fill: #333 !important;
   }
 }
