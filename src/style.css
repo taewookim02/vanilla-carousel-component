@@ -1,18 +1,9 @@
 @import url("./variables.css");
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  display: grid;
-  place-items: center;
-  min-height: 100vh;
-  background-color: #333;
-}
-
 /* CAROUSEL */
 .carousel {
+  box-sizing: border-box;
+
   width: var(--carousel-width);
   overflow: hidden;
   height: var(--carousel-height);
@@ -89,6 +80,11 @@ body {
   transition: all ease 0.3s;
   .dot {
     cursor: pointer;
+    &:hover {
+      path {
+        fill: #333;
+      }
+    }
     svg {
       display: block;
 

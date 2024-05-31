@@ -1,16 +1,32 @@
 {
   "name": "vanilla-carousel-component",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Reusable carousel component coded with JavaScript",
+  "main": "dist/app.bundle.js",
   "scripts": {
     "start": "webpack serve --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
-    "watch": "webpack --watch --config webpack.dev.js"
+    "build": "webpack --config webpack.prod.js"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taewookim02/vanilla-carousel-component.git"
+  },
+  "keywords": [
+    "carousel",
+    "ui",
+    "component",
+    "javascript"
+  ],
+  "author": "Tae Woo Kim <taewookim02@gmail.com>",
   "license": "ISC",
+  "files": [
+    "dist/app.bundle.js",
+    "README.md"
+  ],
+  "bugs": {
+    "url": "https://github.com/taewookim02/vanilla-carousel-component/issues"
+  },
+  "homepage": "https://github.com/taewookim02/vanilla-carousel-component",
   "devDependencies": {
     "css-loader": "^7.1.1",
     "html-webpack-plugin": "^5.6.0",
