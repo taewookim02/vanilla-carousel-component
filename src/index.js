@@ -35,6 +35,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const target = document.querySelector(`div[data-order='${index}']`);
     target.classList.add("dot-active");
   };
+
+  // dot click
+  dotDivs.forEach((dotDiv) => {
+    dotDiv.addEventListener("click", (e) => {
+      const dataOrder = dotDiv.dataset.order;
+      index = dataOrder;
+      updateDotActive();
+      updateSlidePosition();
+    });
+  });
+
+  // nextBtn click
   nextBtn.addEventListener("click", () => {
     if (index < maxLen - 1) {
       index++;
@@ -45,6 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     updateDotActive();
   });
 
+  // prevBtn click
   prevBtn.addEventListener("click", () => {
     if (index > 0) {
       index--;

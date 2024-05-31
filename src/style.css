@@ -35,6 +35,7 @@ body {
     transform: translateY(-50%);
     width: 100%;
     display: flex;
+    user-select: none;
 
     .slide {
       min-width: 100%;
@@ -85,11 +86,11 @@ body {
   opacity: 0.1;
   transition: all ease 0.3s;
   .dot {
+    cursor: pointer;
     svg {
       display: block;
 
       path {
-        cursor: pointer;
         fill: #fff;
         &:hover {
           fill: #333;
