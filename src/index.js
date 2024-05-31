@@ -80,3 +80,5 @@ import { Carousel } from "./carousel";
 const carousel = new Carousel();
 console.log(carousel); // Log the class instance
 document.body.appendChild(carousel);
+const carousel2 = new Carousel();
+document.body.appendChild(carousel2);

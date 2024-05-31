@@ -35,6 +35,11 @@ export class Carousel {
 
     // prevBtn click
     prevBtn.addEventListener("click", this.#handlePrevBtnClick);
+
+    // setInterval
+    setInterval(() => {
+      this.#handleNextBtnClick();
+    }, 5000);
   };
 
   #handlePrevBtnClick = () => {
