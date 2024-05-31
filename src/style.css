@@ -61,8 +61,11 @@
     svg {
       cursor: pointer;
       path {
+        &:hover {
+          fill: #333;
+        }
         &:active {
-          fill: black;
+          fill: #111;
         }
       }
     }
