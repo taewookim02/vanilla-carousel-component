@@ -36,6 +36,8 @@ body {
     width: 100%;
     display: flex;
     user-select: none;
+    /* Animation */
+    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 
     .slide {
       min-width: 100%;
