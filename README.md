@@ -4,6 +4,8 @@ This document provides guidance on how to utilize the Carousel component in web 
 
 _This package is **distributed as ES Modules** and is expected to be used in environments that support module syntax._
 
+[![npm version](https://badge.fury.io/js/vanilla-carousel-component.svg)](https://badge.fury.io/js/vanilla-carousel-component)
+
 ## Installation
 
 ```bash
@@ -38,7 +40,7 @@ const customCarousel = new Carousel(imgList);
 document.body.appendChild(customCarousel);
 ```
 
-## CSS variables
+## CSS Variables
 
 ```css
 :root {
